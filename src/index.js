@@ -1,4 +1,6 @@
 import home from "./home";
+import menu from "./menu";
+import contact from "./contact";
 
 const content = document.getElementById("content");
 
@@ -23,6 +25,16 @@ function dir() {
 homeButton.onclick = () => {
 	dir();
     home();
+}
+
+menuButton.onclick = () => {
+	dir();
+	menu();
+}
+
+contactButton.onclick = () => {
+	dir();
+	contact();
 }
 
 dir();
